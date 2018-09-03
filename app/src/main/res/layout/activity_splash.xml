@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:animateLayoutChanges="true"
     android:background="@color/colorPrimary">
 
     <ImageView
@@ -25,6 +26,7 @@
         android:textSize="12sp"
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/search"
+        android:visibility="gone"
         android:background="@drawable/white_rounded_rect"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -34,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:visibility="gone"
         android:id="@+id/tv_text_splash"
         android:layout_below="@+id/et_splash"
         android:textColor="@android:color/white"
