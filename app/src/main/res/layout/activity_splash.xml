@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/group_2"
+        android:id="@+id/iv_app_logo"
+        android:layout_marginTop="-32dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_app_logo"
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_splash"
+        android:padding="16dp"
+        android:hint="@string/splash_hint_text"
+        android:textSize="12sp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/search"
+        android:background="@drawable/white_rounded_rect"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tv_text_splash"
+        android:layout_below="@+id/et_splash"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/splash_text"/>
+
+
+
+</RelativeLayout>
