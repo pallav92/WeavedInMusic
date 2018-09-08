@@ -1,6 +1,7 @@
 package com.example.pallav.weavedinmusic.activity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -14,7 +15,7 @@ import com.example.pallav.weavedinmusic.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class SpalshActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     @BindView(R.id.et_splash) EditText etSplash;
     @BindView(R.id.tv_text_splash) TextView tvSplashText;
@@ -29,8 +30,19 @@ public class SpalshActivity extends AppCompatActivity {
             @Override
             public void run() {
                showSearchBar();
+                setOnClickLsitnerForSearchBar();
             }
         }, 2000);
+    }
+
+    private void setOnClickLsitnerForSearchBar() {
+        etSplash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SplashActivity.this,MusicListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void showSearchBar(){

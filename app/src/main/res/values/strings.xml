@@ -2,4 +2,5 @@
     <string name="app_name">WeavedInMusic</string>
     <string name="splash_text">Listen to your favourite \n songs from youtube</string>
     <string name="splash_hint_text">Search Music Title, Artists, Movie etc.</string>
+    <string name="mplayer">MPlayer</string>
 </resources>

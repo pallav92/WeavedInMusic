@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:weightSum="1"
+        android:id="@+id/ll_search"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:minHeight="?attr/actionBarSize" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_search"
+            android:padding="16dp"
+            android:hint="@string/splash_hint_text"
+            android:textSize="12sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/search"
+            android:visibility="visible"
+            android:layout_weight="0.5"
+            android:background="@drawable/white_rounded_rect"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

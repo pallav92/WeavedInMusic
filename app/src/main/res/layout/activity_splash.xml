@@ -27,6 +27,7 @@
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/search"
         android:visibility="gone"
+        android:focusable="false"
         android:background="@drawable/white_rounded_rect"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"

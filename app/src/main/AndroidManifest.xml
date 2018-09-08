@@ -13,8 +13,12 @@
 
         </activity>
 
+        <activity android:name=".activity.MusicListActivity">
+
+        </activity>
+
         <activity
-            android:name=".activity.SpalshActivity"
+            android:name=".activity.SplashActivity"
             android:theme="@style/splash_theme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
